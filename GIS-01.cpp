@@ -1,4 +1,4 @@
-Enter file contents here
+/* autor: Sebastián Águila */
 #include<iostream>
 using namespace std;
 int calculaSerie(int base,int exponente);
