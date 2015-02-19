@@ -1,3 +1,4 @@
+/* autor: Sebastián Águila */
 #include <iostream>
 using namespace std;
 
