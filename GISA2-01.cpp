@@ -6,13 +6,14 @@ using namespace std;
 void escribeDigitos(int numero) {
 	Stack <int> pila;
 	int calculo = 0;
-	while(numero > 0){ // Llenamos la pila
+	do{ // Llenamos la pila
 		pila.push(numero % 10);
-		numero / 10;
-	}
+		numero = numero / 10;
+	}while(numero > 0);
 
 	while(pila.size() > 0){
-		cout << pila.top() << " + ";
+		cout << pila.top();
+		if(pila.size() > 1) cout << " + ";
 		calculo =+ pila.top();
 		pila.pop();
 	}
