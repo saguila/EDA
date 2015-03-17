@@ -14,7 +14,7 @@ void escribeDigitos(int numero) {
 	while(pila.size() > 0){
 		cout << pila.top();
 		if(pila.size() > 1) cout << " + ";
-		calculo =+ pila.top();
+		calculo =calculo + pila.top();
 		pila.pop();
 	}
 	cout << " = " << calculo << endl;
